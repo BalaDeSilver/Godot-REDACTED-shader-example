@@ -1,0 +1,137 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/Shader.tres" type="Material" id=1]
+[ext_resource path="res://scripts/set_camera_distance.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=2]
+resource_name = "New Anim"
+length = 6.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("AnimationPlayer/Camera:translation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -5.44372, -0.25, 0, 0.25, 0, -0.835832, -0.25, 0, 0.25, 0, 30.8429, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.5, 3, 4.5, 6 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("AnimationPlayer/Camera:translation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 2.699, -0.25, 0, 0.25, 0, 2.699, -0.25, 0, 0.25, 0, 2.699, -0.25, 0, 0.25, 0, 2.699, -0.25, 0, 0.25, 0, 2.699, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.5, 3, 4.5, 6 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("AnimationPlayer/Camera:translation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 9.59904, -0.25, 0, 0.25, 0, 1.21762, -0.25, 0, 0.25, 0, -7.29753, -0.25, 0, 0.25, 0, 0.785569, -0.25, 0, 0.25, 0, 9.59904, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.5, 3, 4.5, 6 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("AnimationPlayer/Camera:rotation_degrees:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( -3.721, -0.25, 0, 0.25, 0, -12.887, -0.25, 0, 0.25, 0, -3.721, -0.25, 0, 0.25, 0, -3.721, -0.25, 0, 0.25, 0, -3.721, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.5, 3, 4.5, 6 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("AnimationPlayer/Camera:rotation_degrees:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -76.459, -0.25, 0, 0.25, 0, -181.788, -0.25, 0, 0.25, 0, -275, -0.25, 0, 0.25, 0, -360, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.5, 3, 4.5, 6 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("AnimationPlayer/Camera:rotation_degrees:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1.5, 3, 4.5, 6 )
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "New Anim (2)"
+length = 10.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("AnimationPlayer/Camera:translation:z")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 3.952, -0.25, 0, 0.25, 0, 8.526, -0.25, 0, 0.25, 0, 3.952, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 5, 10 )
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("AnimationPlayer/Camera:translation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("AnimationPlayer/Camera:translation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 2.564, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("AnimationPlayer/Camera:translation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 3.952, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+
+[sub_resource type="CubeMesh" id=3]
+
+[node name="AnimationPlayer" type="AnimationPlayer"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 2 )
+"anims/New Anim (2)" = SubResource( 4 )
+anims/RESET = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 1.29899, 0 )
+mesh = SubResource( 3 )
+skeleton = NodePath("")
+material/0 = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Camera" type="Camera" parent="."]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 0.997892, 0.0648981, 0, -0.0648981, 0.997892, 0, 2.699, 9.59904 )
+current = true
