@@ -1,0 +1,126 @@
+[gd_scene load_steps=10 format=3 uid="uid://1n4g0er338gm"]
+
+[ext_resource type="Script" path="res://PlayAnimation.gd" id="1_2g31n"]
+[ext_resource type="Shader" path="res://assets/REDACTED.gdshader" id="2_jd6b6"]
+[ext_resource type="Texture2D" uid="uid://dcepn78inywd7" path="res://assets/redacted.png" id="3_l8xcp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5r8r7"]
+render_priority = 0
+shader = ExtResource("2_jd6b6")
+shader_parameter/scroll_speed = Vector2(3, 5)
+shader_parameter/static_intensity = 0.25
+shader_parameter/color = Color(0, 0, 0, 1)
+shader_parameter/tex_scale = 2.0
+shader_parameter/albedo_tex = ExtResource("3_l8xcp")
+
+[sub_resource type="BoxMesh" id="BoxMesh_0xhxn"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="SphereMesh" id="SphereMesh_267we"]
+radius = 1.0
+height = 2.0
+
+[sub_resource type="Animation" id="Animation_jrgyc"]
+length = 6.0
+step = 0.05
+
+[sub_resource type="Animation" id="Animation_cf4mv"]
+resource_name = "new_animation"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(-2.731, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 2.468, -0.25, 0, 0.25, 0, 2.861, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, -2.731, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.5, 2.3, 3, 4.5, 6)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1.5, -0.25, 0, 0.25, 0, 1.5, -0.25, 0, 0.25, 0, 1.5, -0.25, 0, 0.25, 0, 1.5, -0.25, 0, 0.25, 0, 1.5, -0.25, 0, 0.25, 0, 1.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.5, 2.3, 3, 4.5, 6)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1.5, -0.25, 0, 0.25, 0, -2.235, -0.25, 0, 0.25, 0, -2.877, -0.25, 0, 0.25, 0, 1.461, -0.25, 0, 0.25, 0, 6.069, -0.25, 0, 0.25, 0, 1.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.5, 2.3, 3, 4.5, 6)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:rotation:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(-0.228638, -0.25, 0, 0.25, 0, -0.228638, -0.25, 0, 0.25, 0, -0.228638, -0.25, 0, 0.25, 0, -0.228638, -0.25, 0, 0.25, 0, -0.228638, -0.25, 0, 0.25, 0, -0.228638, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.5, 2.3, 3, 4.5, 6)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:rotation:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(-1.5708, -0.25, 0, 0.25, 0, -3.14159, -0.25, 0, 0.25, 0, -3.9619, -0.25, 0, 0.25, 0, -4.71239, -0.25, 0, 0.25, 0, -6.28319, -0.25, 0, 0.25, 0, -7.85398, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.5, 2.3, 3, 4.5, 6)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:rotation:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.5, 2.3, 3, 4.5, 6)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_20hqu"]
+_data = {
+"RESET": SubResource("Animation_jrgyc"),
+"new_animation": SubResource("Animation_cf4mv")
+}
+
+[node name="TestScene" type="Node3D"]
+script = ExtResource("1_2g31n")
+
+[node name="Box" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = SubResource("ShaderMaterial_5r8r7")
+mesh = SubResource("BoxMesh_0xhxn")
+
+[node name="Ball" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3.86254)
+material_override = SubResource("ShaderMaterial_5r8r7")
+mesh = SubResource("SphereMesh_267we")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-3.61999e-06, 0.226651, -0.973976, 0, 0.973976, 0.226651, 1, 8.20475e-07, -3.52578e-06, -2.731, 1.5, 1.5)
+fov = 90.0
+size = 0.277
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Camera3D")
+libraries = {
+"": SubResource("AnimationLibrary_20hqu")
+}

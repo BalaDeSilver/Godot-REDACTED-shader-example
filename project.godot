@@ -6,22 +6,14 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
 [application]
 
-config/name="REDACTED"
-run/main_scene="res://scenes/Redacted.tscn"
-config/icon="res://icon.png"
+config/name="REDACTED_4.0"
+config/features=PackedStringArray("4.0", "Forward Plus")
+config/icon="res://icon.svg"
 
-[gui]
+[dotnet]
 
-common/drop_mouse_on_gui_input_disabled=true
-
-[physics]
-
-common/enable_pause_aware_picking=true
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"
+project/assembly_name="REDACTED_4.0"
